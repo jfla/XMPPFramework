@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
 
     # Can't use the KissXML pod because enabling the NSXML defines requires
     # modifying a header
-    ss.source_files = 'Vendor/KissXML/**/*.{h,m}'
+    core.source_files = 'Vendor/KissXML/**/*.{h,m}'
 
     core.dependency 'CocoaLumberjack','~>1.6.2'
     core.dependency 'CocoaAsyncSocket','~>7.3.1'
