@@ -36,10 +36,6 @@ Pod::Spec.new do |s|
     core.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv',
                       'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/XMPPFramework/Vendor/libidn"'}
 
-    core.dependency 'XMPPFramework/Authentication'
-    core.dependency 'XMPPFramework/Categories'
-    core.dependency 'XMPPFramework/Utilities'
-
     # Can't use the KissXML pod because enabling the NSXML defines requires
     # modifying a header
     core.ios.dependency 'XMPPFramework/KissXML'
